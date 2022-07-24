@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+     "baseUrl": ".",
+     "resolveJsonModule": true,
+     "noImplicitAny": false,
+     "noImplicitThis": true,
+     "noImplicitReturns": true,
+     "outDir": "./lib",
+     "target": "ES2017",
+     "module": "commonjs",
+     "types": ["node","webdriverio/async", "@wdio/mocha-framework", "chai"],   
+     "useUnknownInCatchVariables": true,
+     "strictNullChecks": true,
+     "strictFunctionTypes": true,
+     "sourceMap": true,
+     "inlineSources": true,
+     "strictPropertyInitialization": true,
+     "paths": {
+       "*": [ "./*" ],
+       "test/*": ["./test/appTest/*.ts"],
+       "lib/*": ["./lib/*"]
+ 
+   },           
+     "preserveSymlinks": true,
+     "strict": true,                           
+     "esModuleInterop": true,                  
+     "skipLibCheck": true,                     
+     "forceConsistentCasingInFileNames": true 
+  },
+  "include": ["../test/**/*.ts"]
+ }
+   
